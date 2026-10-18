@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ruota-della-fortuna-mcp
+    runtime: node
+    plan: free
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /health
+    autoDeploy: true
